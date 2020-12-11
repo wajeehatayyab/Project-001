@@ -36,7 +36,7 @@ jobs:
         
       #Run surge on deploy
       - name: Run Surge
-        run: Surge./Project1.surge.sh --token ${{secret.SURGE_PROJECT1}}
+        run: Surge./Project1.surge.sh --token ${{secrets.SURGE_PROJECT1}}
           
           echo Add other actions to build,
           echo test, and deploy your project.
