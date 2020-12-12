@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: deploy surge automatically
+name: deploy surge 
 
 # Controls when the action will run. 
 on:
@@ -26,9 +26,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Setup NodeJS
-        uses: action/setup-node@v1
+        uses: actions/setup-node@v2-beta
         with:
-          node version: 12.x
+          node version: 12
 
       # Runs a set of commands using the runners shell
       - name: Setup Surge
